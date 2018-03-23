@@ -1,6 +1,6 @@
-FROM gcr.io/google_appengine/nodejs:latest
+FROM gcr.io/google_appengine/nodejs:latest@sha256:8c0152bebb6c3bc2b41137acd0122bae71156386902fd74a9971dcca3ae80ac3
 RUN ha
-FROM docker.io/debian:latest as deps
+FROM docker.io/debian:latest@sha256:f7ca2200b10b859910a861d54229753b5aed94bb5c8f4321e10ec880b0909a3b as deps
 RUN not
-FROM quay.io/tayloredtechnology/basal:base
+FROM quay.io/tayloredtechnology/basal:base@sha256:78f412dedd1f3411352ea03bdd52e174e11d184dbca39d0152b23dd797361bb3
 RUN A
